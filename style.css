@@ -56,22 +56,21 @@ button {
 }
 
 #photoContainer {
-    position: fixed;       /* pinned at bottom of screen */
-    bottom: 10px;
+    position: fixed;      /* pinned at bottom */
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    text-align: center;
-    width: 80%;            /* reduce width so images aren't too big */
-    max-height: 25vh;      /* smaller height */
-    overflow: hidden;
+    display: none;        /* hide initially */
+    z-index: 5;
 }
 
 #slideshow {
-    width: auto;
-    height: 100%;          /* scale to container height */
+    width: 300px;         /* fixed width */
+    height: auto;         /* scale proportionally */
     border-radius: 15px;
-    object-fit: contain;    /* no cropping */
-    transition: opacity 2s;
+    object-fit: cover;
+    box-shadow: 0 0 20px pink;
+    transition: opacity 1s;
 }
 
 
@@ -88,6 +87,7 @@ button {
     from { transform: translateY(0); opacity: 1; }
     to { transform: translateY(-100vh); opacity: 0; }
 }
+
 
 
 
