@@ -34,11 +34,11 @@ yesBtn.addEventListener("click", () => {
         question.innerText = yesMessages[yesClicks];
         yesClicks++;
     } else {
-        mainBox.style.display = "none";        // hide question/buttons
-        loveLetter.style.display = "block";    // show text
-        photoContainer.style.display = "block"; // show photos at bottom
-        startTypewriter();
-    }
+    mainBox.style.display = "none";
+    loveLetter.style.display = "block";
+    document.getElementById("photoContainer").style.display = "block"; // show photos
+    startTypewriter();
+}
 });
 
 // FULL LOVE LETTER
@@ -100,5 +100,6 @@ setInterval(() => {
         slideshow.style.opacity = 1;
     }, 1000);
 }, 5000);
+
 
 
