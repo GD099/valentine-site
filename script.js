@@ -34,8 +34,9 @@ yesBtn.addEventListener("click", () => {
         question.innerText = yesMessages[yesClicks];
         yesClicks++;
     } else {
-        mainBox.style.display = "none";
-        loveLetter.style.display = "block";
+        mainBox.style.display = "none";        // hide question/buttons
+        loveLetter.style.display = "block";    // show text
+        photoContainer.style.display = "block"; // show photos at bottom
         startTypewriter();
     }
 });
@@ -99,4 +100,5 @@ setInterval(() => {
         slideshow.style.opacity = 1;
     }, 1000);
 }, 5000);
+
 
