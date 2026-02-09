@@ -56,13 +56,13 @@ button {
 }
 
 #photoContainer {
-    position: fixed;       /* pin to bottom */
+    position: fixed;       /* pinned at bottom of screen */
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    width: 90%;            /* scale with screen */
-    max-height: 40vh;      /* photos take up bottom half */
+    width: 90%;            /* responsive width */
+    max-height: 40vh;      /* bottom portion */
     overflow: hidden;
 }
 
@@ -88,5 +88,6 @@ button {
     from { transform: translateY(0); opacity: 1; }
     to { transform: translateY(-100vh); opacity: 0; }
 }
+
 
 
