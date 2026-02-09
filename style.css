@@ -61,8 +61,8 @@ button {
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    width: 90%;            /* responsive width */
-    max-height: 40vh;      /* bottom portion */
+    width: 80%;            /* reduce width so images aren't too big */
+    max-height: 25vh;      /* smaller height */
     overflow: hidden;
 }
 
@@ -88,6 +88,7 @@ button {
     from { transform: translateY(0); opacity: 1; }
     to { transform: translateY(-100vh); opacity: 0; }
 }
+
 
 
 
